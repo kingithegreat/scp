@@ -1,1 +1,48 @@
+/* adds background image with linearGradient that covers the whole div */
+#backGroundImages{
+    display: flex;    
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('/scp images/landingPageImg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    }
+  
+    /* adds background color to my text */
+.listBg{
+   
+    background:linear-gradient(rgb(249, 246, 249),white, rgb(240, 225, 240))
+    
+    }
+h1{
+     font-family:"Trirong", serif ;
+}
+h3{
+     font-family: "Trirong", serif ;
+}
+h2{
+    font-family: "Trirong", serif ;
+    text-align: center;
+}
+ /* adds background linearGradient */
+body{
+
+    /* background:linear-gradient(rgb(240, 225, 240),white, rgb(240, 225, 240)) */
+    background:linear-gradient(rgb(197, 247, 233),rgb(239, 236, 247),rgb(238, 232, 244) ,rgb(234, 228, 251),rgb(255, 230, 230))
+   
+}
+#modalBg{
+    background:linear-gradient(white,rgb(170, 166, 182),white ,rgb(170, 166, 182),rgb(255, 230, 230)) 
+}
+.accordion-body{
+    background:linear-gradient(rgb(241, 239, 247),rgb(253, 243, 243),white,rgb(239, 236, 247),white ,rgb(238, 234, 250),rgb(255, 230, 230))  
+
+}
+#bottomScreen{
+    height:60vh;
+}
+
 
