@@ -18,11 +18,11 @@
     <!--HEADER-->
   
      <br><br>
-      <div class="container-fluid bg-dark text-danger text-center rounded">
+      <div class="container-fluid bg-black text-danger text-center rounded">
          <h1 class="mb-4 text-danger text-center display-1 fw-bold" >SCP FOUNDATION</h1>
       </div>
     
-    <div class="rounded border shadow p-5"> 
+    <div id="displayContainer"class="rounded border shadow p-5"> 
     
     <?php
             include "connection.php";
@@ -55,7 +55,7 @@
       
       
     <h1>Create a new record</h1>
-    <p> <a href = "index.php" class="btn btn-dark">Back to index page</a></p>
+    <p> <a href = "index.php" class="btn btn-danger">Back to index page</a></p>
     
     <form method="post" action="create.php" class="form-group">
         <label>Enter SCP Item Number:</label>
