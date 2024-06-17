@@ -22,7 +22,7 @@
       include "connection.php";?>
       <!--HEADER-->
      
-      <div class="container-fluid bg-dark text-danger text-center rounded">
+      <div class="container-fluid bg-black text-danger text-center rounded m-5">
          <h1 class="mb-1 text-danger text-center display-1 fw-bold " >SCP FOUNDATION</h1>
       </div>
       
@@ -31,7 +31,7 @@
       
       
       
-      <div class="rounded border shadow p-5 container ">
+      <div id="displayContainer" class="rounded border shadow p-5 container ">
           
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded pt-0">
         <div class="container-fluid">
@@ -89,7 +89,7 @@
                         $update = "update.php?update=" . $array['ID'];
                         $delete = "index.php?delete=" .$array['ID'];
                          
-                         echo "<h2 class='display-2'>{$array['Item']}</h2>
+                         echo "<h2 class='display-2 '>{$array['Item']}</h2>
                                <h3 class='display-3'>{$array['Class']}</h3>";
                         
                         if(!empty($array['Image']))
@@ -149,19 +149,19 @@
                 <div class="col-12 col-lg-6 navbar-expand text-center mb-3 mb-lg-0">
                     <ul class="list-unstyled d-block d-lg-flex justify-content-center">
                         <li class="nav-item">
-                            <a class="text-dark text-decoration-none me-lg-3" href="">Home</a>
+                            <a class="text-light text-decoration-none me-lg-3" href="">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-dark text-decoration-none me-lg-3" href="">About</a>
+                            <a class="text-light text-decoration-none me-lg-3" href="">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-dark text-decoration-none me-lg-3" href="">Shop</a>
+                            <a class="text-light text-decoration-none me-lg-3" href="">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-dark text-decoration-none me-lg-3" href="">Gallery</a>
+                            <a class="text-light text-decoration-none me-lg-3" href="">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-dark text-decoration-none" href="">Contact</a>
+                            <a class="text-light text-decoration-none" href="">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -177,9 +177,9 @@
                 <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path></svg></a> <a class="me-2" href=""><svg class="bi bi-facebook text-primary" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path></svg></a>
             </div>
-            <div class="pt-lg-4 pb-4 pb-lg-3 text-center small">
-                <p class="mb-0"><a class="d-block d-lg-inline text-muted mx-lg-1 mb-2 mb-lg-0" href="">Privacy Policy</a> <a class="d-block d-lg-inline text-muted mx-lg-1 mb-2 mb-lg-0" href="">Terms of Service</a> <a class="d-block d-lg-inline text-muted mx-lg-1 mb-2 mb-lg-0" href="">Site Map</a></p>
-                <p class="text-muted mb-0">© 2024 SCP Foundation All rights reserved.</p>
+            <div class="pt-lg-4 pb-4 pb-lg-3 text-center small ">
+                <p class="mb-0"><a class="d-block d-lg-inline text-light mx-lg-1 mb-2 mb-lg-0" href="">Privacy Policy</a> <a class="d-block d-lg-inline text-light mx-lg-1 mb-2 mb-lg-0" href="">Terms of Service</a> <a class="d-block d-lg-inline text-light mx-lg-1 mb-2 mb-lg-0" href="">Site Map</a></p>
+                <p class="text-light mb-0">© 2024 SCP Foundation All rights reserved.</p>
             </div>
         </div>
     </footer>
