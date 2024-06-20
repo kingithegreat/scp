@@ -9,7 +9,12 @@
      <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="styles/styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     </head>
   <body >
       <?php
@@ -22,24 +27,18 @@
       include "connection.php";?>
       <!--HEADER-->
      
-      <div class="container-fluid bg-black text-danger text-center rounded m-5">
-         <h1 class="mb-1 text-danger text-center display-1 fw-bold " >SCP FOUNDATION</h1>
+      <div class="container-fluid bg-black text-danger text-center rounded m-2">
+
+         <h1 id="heading" class="mb-1 pt-3 text-danger text-center display-1 fw-bold " >SCP FOUNDATION</h1>
       </div>
-      
-     
-      
-      
-      
-      
-      <div id="displayContainer" class="rounded border shadow p-5 container ">
-          
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded pt-0">
+        <!--Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded mx-5 pt-0">
         <div class="container-fluid">
-            <img src="images/fotterImage.jpg" alt="" style="height: 40px;">
+            <img class="m-3" src="images/footerImage.jpg" alt="" style="height: 40px;">
           
-            <a class="navbar-brand text-danger fw-bold fst-italic ms-3" href="#">
+           <!-- <a class="navbar-brand text-danger fs-2 fw-bold fst-italic ms-3" href="#">
                 <i class="fas fa-shield-alt"></i   >SCP
-            </a>
+            </a>-->
     
          
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,15 +49,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item active">
-                    <a href="create.php" class="nav-link text-danger">Add New Record</a>
+                    <a href="create.php" class="nav-link text-light fs-2 m-2">Add New Record</a>
                   </li>
                   <?php foreach($Result as $link): ?>
-                    <li class="nav-item active"><a href="index.php?link='<?php echo $link['Item']; ?>'" class="nav-link text-danger"><?php echo $link['Item']; ?></a></li>
+                    <li class="nav-item active"><a href="index.php?link='<?php echo $link['Item']; ?>'" class="nav-link text-danger fs-2"><?php echo $link['Item']; ?></a></li>
                   <?php endforeach; ?>
                 </ul>
             </div>
         </div>
     </nav>
+    <br><br>
+      <div id="displayContainer" class="rounded border shadow p-5 container ">
+          
+     
           <?php 
             
             if(isset($_GET['link']))
@@ -119,7 +122,11 @@
             }
             else
             {
-                echo "<p class'text-danger'>Welcome to the SCP database. Use the links above to view current records in the database or create a new entry.</p>";
+                echo "<br><br><p id='indexText' >Welcome to the SCP database. Use the links above to view current records in the database or create a new entry.</p>
+                        <br><br>
+                        
+                        
+                ";
             }
           
           // Delete function
@@ -183,10 +190,6 @@
             </div>
         </div>
     </footer>
-    
-    
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
