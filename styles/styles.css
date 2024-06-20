@@ -1,4 +1,12 @@
 
+
+#heading {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+}
+
 h3{
      font-family: "Trirong", serif ;
 }
@@ -20,5 +28,9 @@ body{
 
 #bottomScreen{
     height:60vh;
+}
+#indexText{
+     text-align: center;
+     font-size:30px;
 }
 
