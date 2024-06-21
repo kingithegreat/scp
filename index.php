@@ -84,7 +84,7 @@
               }
               echo "<p>{$array['Containment']}</p>
                     <p>{$array['Description']}</p>
-                    <p class='buttons'><a href='{$update}' class='btn btn-dark'>Update Record</a> &nbsp;
+                    <p class='buttons'><a href='{$update}' class='btn btn-light'>Update Record</a> &nbsp;
                     <a href='{$delete}' class='btn btn-danger'>Delete Record</a></p>";
             } else {
               echo "<p>No record found for Item: {$array['Item']}</p>";
