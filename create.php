@@ -11,7 +11,11 @@
      
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     </head>
+    
     <body class="container">
 
 
@@ -19,7 +23,7 @@
   
      <br><br>
       <div class="container-fluid bg-black text-danger text-center rounded">
-         <h1 class="mb-4 text-danger text-center display-1 fw-bold" >SCP FOUNDATION</h1>
+         <h1 id="heading" class="mb-4 text-danger text-center display-1 fw-bold" >SCP FOUNDATION</h1>
       </div>
     
     <div id="displayContainer"class="rounded border shadow p-5"> 
@@ -80,14 +84,42 @@
         
         <label>Enter Image:</label>
         <br>
-        <input type="text" name="Image" placeholder="images/name_of_image.png" class="form-control">
+        <input type="text" id="listBoxInput" name="Image" placeholder="Select image from drop down menu" class="form-control">
         <br><br>
-        
+        <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Select Image</button>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" name="Image" href="#">images/default1.jpg</a></li>
+        <li><a class="dropdown-item" name="Image" href="#">images/default2.jpg</a></li>
+        <li><a class="dropdown-item" name="Image" href="#">images/default3.jpg</a></li>
+        <li><a class="dropdown-item" name="Image" href="#">images/default4.jpg</a></li>
+        <li><a class="dropdown-item" name="Image" href="#">images/default5.jpg</a></li>
+    </ul>
+    </div>
+    
+     <br><br>
         <input type="submit" name="submit" class="btn btn-primary">
         
     </form>
     
-    
+    <script>
+    // Get all dropdown items
+    var dropdownItems = document.querySelectorAll('.dropdown-item');
+
+    // Add click event listener to each dropdown item
+    dropdownItems.forEach(function(item) {
+        item.addEventListener('click', function(e) {
+            // Prevent the default action
+            e.preventDefault();
+
+            // Get the text of the clicked dropdown item
+            var text = e.target.textContent;
+
+            // Set the text as the value of the list box input
+            document.getElementById('listBoxInput').value = text;
+        });
+    });
+</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
