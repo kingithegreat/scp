@@ -183,16 +183,16 @@
                             <a class="text-light text-decoration-none me-lg-3" href="">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-light text-decoration-none me-lg-3" href="">About</a>
+                            <a class="text-light text-decoration-none me-lg-3" href="https://scp-wiki.wikidot.com/about-the-scp-foundation">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-light text-decoration-none me-lg-3" href="">Shop</a>
+                            <a class="text-light text-decoration-none me-lg-3" href="https://05command.wikidot.com/staff-list">Staff</a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-light text-decoration-none me-lg-3" href="">Gallery</a>
+                            <a class="text-light text-decoration-none me-lg-3" href="https://scp-wiki.wikidot.com/guide-hub">Guide</a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-light text-decoration-none" href="">Contact</a>
+                            <a class="text-light text-decoration-none" href="https://scp-wiki.wikidot.com/contact-staff">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -209,7 +209,7 @@
                 <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path></svg></a>
             </div>
             <div class="pt-lg-4 pb-4 pb-lg-3 text-center small ">
-                <p class="mb-0"><a class="d-block d-lg-inline text-light mx-lg-1 mb-2 mb-lg-0" href="">Privacy Policy</a> <a class="d-block d-lg-inline text-light mx-lg-1 mb-2 mb-lg-0" href="">Terms of Service</a> <a class="d-block d-lg-inline text-light mx-lg-1 mb-2 mb-lg-0" href="">Site Map</a></p>
+                <p class="mb-0"><a class="d-block d-lg-inline text-light mx-lg-1 mb-2 mb-lg-0" href="https://scp-wiki.wikidot.com/site-rules">Privacy Policy</a> <a class="d-block d-lg-inline text-light mx-lg-1 mb-2 mb-lg-0" href="https://scp-wiki.wikidot.com/licensing-guide">Terms of Service</a> <a class="d-block d-lg-inline text-light mx-lg-1 mb-2 mb-lg-0" href="https://scp-wiki.wikidot.com/about-the-scp-foundation">Site Map</a></p>
                 <p class="text-light mb-0">© 2024 SCP Foundation All rights reserved.</p>
             </div>
         </div>
