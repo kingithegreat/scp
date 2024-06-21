@@ -1,41 +1,41 @@
-
-
+/* This is the style for the heading */
 #heading {
-  font-family: "Rubik", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  text-align: center;
+  font-family: "Rubik", sans-serif; /* sets the font family to Rubik */
+  font-weight: 300; /* sets the font weight to 300 */
+  font-style: normal; /* sets the font style to normal */
+  text-align: center; /* centers the text */
 }
 
+/* This is the style for h3 elements */
 h3{
-     font-family: "Trirong", serif ;
+     font-family: "Trirong", serif ; /* sets the font family to Trirong */
 }
+
+/* This is the style for h2 elements */
 h2{
-    font-family: "Trirong", serif ;
-    text-align: center;
+    font-family: "Trirong", serif ; /* sets the font family to Trirong */
+    text-align: center; /* centers the text */
 }
- /* adds background linearGradient */
+
+/* This is the style for the body */
 body{
-
-   background-color: black;
-   
+   background-color: black; /* sets the background color to black */
 }
+
+/* This is the style for the display container */
 #displayContainer{
+    /* sets a linear gradient background */
     background:linear-gradient(rgb(27, 7, 11),rgb(9, 54, 62),rgb(9, 1, 18) ,rgb(9, 6, 16),rgb(30, 17, 17));
-    color: white;
-   
+    color: white; /* sets the text color to white */
 }
 
+/* This is the style for the bottom screen */
 #bottomScreen{
-    height:60vh;
+    height:60vh; /* sets the height to 60% of the viewport height */
 }
-#indexText{
-     text-align: center;
-     font-size:30px;
-}
-  .carousel-item img {
-    width: 300px;  /* Adjust as needed */
-    height: 200px; /* Adjust as needed */
-    background-size: cover;
-  }
 
+/* This is the style for the index text */
+#indexText{
+     text-align: center; /* centers the text */
+     font-size:30px; /* sets the font size to 30px */
+}
