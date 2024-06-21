@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     </head>
-  <body >
+  <body class="container-fluid">
       <?php
       // Enable error reporting
         error_reporting(E_ALL);
@@ -27,12 +27,12 @@
       include "connection.php";?>
       <!--HEADER-->
      
-      <div class="container-fluid bg-black text-danger text-center rounded m-2">
+      <div class="container-fluid bg-black text-danger text-center rounded ">
 
          <h1 id="heading" class="mb-1 pt-3 text-danger text-center display-1 fw-bold " >SCP FOUNDATION</h1>
       </div>
         <!--Navigation-->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded mx-5 pt-0">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded  pt-0">
         <div class="container-fluid">
             <img class="m-3" src="images/footerImage.jpg" alt="" style="height: 40px;">
           
@@ -49,10 +49,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item active">
-                    <a href="create.php" class="nav-link text-light fs-2 m-2">Add New Record</a>
+                    <a href="create.php" class="nav-link text-light  ">Add New Record</a>
                   </li>
                   <?php foreach($Result as $link): ?>
-                    <li class="nav-item active"><a href="index.php?link='<?php echo $link['Item']; ?>'" class="nav-link text-danger fs-2"><?php echo $link['Item']; ?></a></li>
+                    <li class="nav-item active"><a href="index.php?link='<?php echo $link['Item']; ?>'" class="nav-link text-danger"><?php echo $link['Item']; ?></a></li>
                   <?php endforeach; ?>
                 </ul>
             </div>
