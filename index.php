@@ -61,7 +61,6 @@
     <br><br>
       <div id="displayContainer" class="rounded border shadow p-5 container ">
           
-     
           <?php 
             
             if(isset($_GET['link']))
@@ -122,8 +121,33 @@
             }
             else
             {
-                echo "<br><br><p id='indexText' >Welcome to the SCP database. Use the links above to view current records in the database or create a new entry.</p>
-                        <br><br>
+                echo "
+         
+                    <br><br>
+                        <p id='indexText' >Welcome to the SCP database. Use the links above to view current records in the database or create a new entry.</p>
+                      <br><br>
+                      <div id='carouselExample' class='carousel slide'>
+                          <div class='carousel-inner'>
+                            <div class='carousel-item active'>
+                              <img src='images/default1.jpg' class='d-block w-70 h-70 mx-auto' alt='scp image'>
+                            </div>
+                            <div class='carousel-item'>
+                              <img src='images/default2.jpg' class='d-block w-70 h-70 mx-auto' alt='scp image'>
+                            </div>
+                            <div class='carousel-item'>
+                              <img src='images/default4.jpg' class='d-block w-70 h-70 mx-auto' alt='scp image'>
+                            </div>
+                          </div>
+                          <button class='carousel-control-prev' type='button' data-bs-target='#carouselExample' data-bs-slide='prev'>
+                            <span class='carousel-control-prev-icon' aria-hidden='true'></span>
+                            <span class='visually-hidden'>Previous</span>
+                          </button>
+                          <button class='carousel-control-next' type='button' data-bs-target='#carouselExample' data-bs-slide='next'>
+                            <span class='carousel-control-next-icon' aria-hidden='true'></span>
+                            <span class='visually-hidden'>Next</span>
+                          </button>
+                        </div>
+
                         
                         
                 ";
